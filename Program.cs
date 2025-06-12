@@ -12,7 +12,7 @@ namespace Library_Management_System
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
-            // Register ApplicationDbContext with SQL Server provider
+            // Register ApplicationDbContext with SQL  provider
             builder.Services.AddDbContext<LibraryContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
